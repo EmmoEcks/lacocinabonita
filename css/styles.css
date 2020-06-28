@@ -1,0 +1,342 @@
+/***** 
+ * 
+ *  Web Project
+ *  Name: Ariel Ardiles
+ *  Date: June 16 2020
+ *  Description: CSS page for Web Project
+ *
+ *****/
+
+* {
+    margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+html {
+	background: #fff2cc;
+}
+
+body {
+	width: 80%;
+	margin: 2% auto;
+	padding: 1%;
+	border: 2px #000 solid;
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px #9900ff;
+	background: #ffe6ff;
+}
+
+header {
+	position: relative;
+}
+
+#bannerImage {
+	width: 100%;
+}
+
+#headerTitle{
+	position: absolute;
+	top: 3%;
+	left: 3%;
+	font-family: 'Dancing Script';
+	font-size: 50pt;
+	color: #ffccff;
+	text-shadow: -1px -1px 0 #990099, 1px -1px 0 #990099, -1px 1px 0 #000, 1px 1px 0 #990099, 0px 0px 40px;
+}
+
+#slogan {
+	position: absolute;
+	bottom: 6%;
+	right: 1%;
+	font-family: 'Dancing Script';
+	font-size: 20pt;
+	color: #ffccff;
+	text-shadow: -1px -1px 0 #990099, 1px -1px 0 #990099, -1px 1px 0 #000, 1px 1px 0 #990099, 0px 0px 40px;
+}
+
+#subscript {
+	position: absolute;
+	top: 34%;
+	left: 25%;
+	font-family: verdana;
+	color: #ffccff;
+	text-shadow: -1px -1px 0 #990099, 1px -1px 0 #990099, -1px 1px 0 #000, 1px 1px 0 #990099, 0px 0px 40px;
+}
+
+nav {
+	position: relative;
+	top: -5px;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 3%;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	font-size: 24pt;
+	font-family: Bungee, Verdana;
+	background: rgb(251,0,255);
+	background: linear-gradient(0deg, rgba(251,0,255,1) 0%, rgba(255,255,255,1) 50%, rgba(111,0,119,1) 100%);
+}
+
+.businessName {
+	font-weight: bold;
+	font-style: italic;
+}
+
+a:link {
+	color: #990099;
+}
+
+a:visited {
+	color: #990099;
+}
+
+a:hover {
+	color: #ffccff;
+	text-shadow: -1px -1px 0 #990099, 1px -1px 0 #990099, -1px 1px 0 #000, 1px 1px 0 #990099, 0px 0px 40px;
+}
+
+a:active {
+	color: #ffccff;
+}
+
+#indexContent {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.content {
+	flex: 1;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	margin: 5%;
+	padding: 1%;
+	border: 2px #990099 solid;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 2px 2px 2px #990099;
+}
+
+.contentPS {
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.contentPS section p {
+	margin: auto 7%;
+	padding: 0 10%;
+}
+
+.contentPS section img {
+	width: 100%;
+}
+
+#imageSlider {
+	display: flex;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.imageContainer {
+	display: flex;
+	width: 1000%;
+	position: relative;
+	transition: left 2s;
+	-webkit-transition: left 2s;
+	-moz-transition: left 2s;
+	-o-transition: left 2s;
+}
+
+.sliderImage {
+	float: left;
+	margin: 0%;
+	padding: 0%;
+}
+
+#buttonContainer {
+	position: relative;
+}
+
+#sliderImage01:target ~ .imageContainer {
+	left: 0%;
+}
+#sliderImage02:target ~ .imageContainer {
+	left: -100%;
+}
+#sliderImage03:target ~ .imageContainer {
+	left: -200%;
+}
+#sliderImage04:target ~ .imageContainer {
+	left: -300%;
+}
+#sliderImage05:target ~ .imageContainer {
+	left: -400%;
+}
+#sliderImage06:target ~ .imageContainer {
+	left: -500%;
+}
+#sliderImage07:target ~ .imageContainer {
+	left: -600%;
+}
+#sliderImage08:target ~ .imageContainer {
+	left: -700%;
+}
+#sliderImage09:target ~ .imageContainer {
+	left: -800%;
+}
+#sliderImage10:target ~ .imageContainer {
+	left: =900%;
+}
+
+
+.sliderButton {
+	display: inline block;
+	width: 1%;
+	height: 1%;
+	border-radius: 5px;
+	background: #fff;
+}
+
+section {
+	flex: 1;
+	justify-content: center;
+}
+
+#proprietor {
+	margin: 0%;
+	padding: 3% 1%;
+}
+
+#rooms {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-top: 4%;
+	border: 3px #660066 solid;
+	background: #660066;
+}
+
+.room { 
+width: 33%; }
+
+blockquote {
+	font-style: italic;
+}
+
+footer {
+	font-size: 10pt;
+	width:100%;
+	text-align: center;
+	margin: 5% auto 1% auto;
+}
+
+#footerNav {
+	padding: 2%;
+}
+
+h2 {
+	font-family: 'Krona One';
+	padding: 2% 0% 4% 0%;
+}
+
+.content p {
+	margin: 2%;
+}
+
+fieldset {
+	width: 70%;
+	padding: 1%;
+	margin: 2% auto;
+	padding: 3%;
+	border: 2px solid #990099;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #990099;
+}
+
+form p {
+	margin: 0% 4% 4% 4%;
+	font-size: 12pt;
+}
+
+form ul {
+	list-style: none;
+}
+
+form ul li {
+	display: flex;
+	justify-content: space-between;
+}
+
+form ul li p {
+	width: 100%;
+	text-align: right;
+
+}
+
+#cardType {
+	display: flex;
+	font-size: 8pt;
+	justify-content: space-around;
+	white-space: nowrap;
+}
+
+input, select {
+	border-bottom: 1px solid #990099;
+	border-right: 1px solid #990099;
+	box-shadow: 1px 1px 1px #990099;
+	margin: .5%;
+	padding: 1%;
+}
+
+label#cardNumber {
+	fonot-size: 10pt;
+	white-space: nowrap;
+}
+
+button {
+	font-size: 16pt;
+	padding: 1.5%;
+	border: 2px solid #990099;
+	background: #ffccff;
+	font-family: 'Krona One';
+}
+
+#buttons {
+	display: flex;
+	justify-content: center;
+}
+
+legend {
+	font-weight: bolder;
+	padding: 1%;
+	font-family: 'Krona One';
+}
+
+.error {
+	display: none;
+	text-align: right;
+	color: #ff0000;
+}
+
+.footerNav{
+	margin: 1%;
+	font-style: none;
+}

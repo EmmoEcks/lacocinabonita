@@ -1,0 +1,199 @@
+<!-- ***** 
+ * 
+ *  Web Project
+ *  Name: Ariel Ardiles
+ *  Date: June 16, 2020
+ *  Description: Contact page for Web Project
+ *
+ *****/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+	<title>La Cocina Bonita</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&disposable=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<header>
+		<img id="bannerImage" src="images/banner.jpg" alt="Shrimp Canapes" />
+		<h1 id="headerTitle">La Cocina Bonita</h1>
+		<h3 id="slogan">A little bit of Home, a little bit gourmet, all made with <strong>Passion</strong></h3>
+		<h4 id="subscript"> For any occasion</h4>
+		
+	</header>
+
+	<nav id="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="productsandservices.html">About</a></li>
+			<li><a href="book.html">Book</a></li>
+		</ul>
+	</nav>
+
+	<form id="bookForm" action="index.html">
+		<fieldset>
+			<section>
+				<h2>Book an Event</h2>
+				<p>Number of attendees age 13 and under must be counted separately. Deposit of $6.00 per person required with this form submission. Remainder of payment due before event unless otherwise agreed upon.</p>
+			</section>
+			<fieldset>
+				<legend id="generalInformation">General Information</legend>
+				<ul>
+					<li>
+						<label for="nameOfEvent">Name of Event</label>
+						<input id="nameOfEvent" name="nameOfEvent" type="text" placeholder="Event Name" autofocus />
+					</li>
+					<p class="error generalInformationError" id="nameOfEvent_error">Required Field</p>
+					<li>
+						<label for="hostName">Host Name</label>
+						<input id="hostName" name="hostName" type="text" placeholder="Host Name" />
+					</li>
+					<p class=" error generalInformationError" id="hostName_error">Required Field</p>
+					<li>
+						<label for="dateOfEvent">Date of Event</label>
+						<input id="dateOfEvent" name="dateOfEvent" type="date" />
+					</li>
+					<p class="error generalInformationError" id="dateOfEvent_error" id="dateOfEvent_error">Required Field</p>
+					<li>
+						<label for="startTime">Starting Time</label>
+						<input id="startTime" name="startTime" type="time" />
+					</li>
+					<p class="error generalInformationError" id="startTime_error">Required Field</p>
+					<li>
+						<label for="approximateGuests">Approximate Number of Guests</label>
+						<input id="approximateGuests" name="approximateGuests" type="number" />
+					</li>
+					<p class="error generalInformationError" id="approximateGuests_error">Required Field</p>
+					<li>
+						<label for="kids">Number of Children</label>
+						<input id="kids" name="kids" type="number" />
+					</li>
+					<p class="error generalInformationError" id="kids_error">Required Field</p>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend id="contactInfo">Contact Information</legend>
+				<ul>
+					<li>
+						<label for="companyName">Company Name</label>
+						<input id="companyName" name="companyName" type="" />
+					</li>
+					<p class="error contactInformationError" id="companyName_error">Required Field</p>
+					<li>
+						<label for="contactName">Contact Name</label>
+						<input id="contactName" name="contactName" type="text" />
+					</li>
+					<p class="error contactInformationError" id="contactName_error">Required Field</p>
+					<li>
+						<label for="contactEmail">Contact E-mail</label>
+						<input id="contactEmail" name="contactEmail" type="text" />
+					</li>
+					<p class="error contactInformationError" id="contactEmail_error">Required Field</p>
+					<li>
+						<label for="contactPhone">Contact Phone</label>
+						<input id="contactPhone" name="contactPhone" type="tel" />
+					</li>
+					<p class="error contactInformationError" id="contactPhone_error">Required Field</p>
+				</ul>
+			</fieldset>
+
+			<fieldset>
+				<legend id="paymentInfo">Payment Information</legend>
+				<ul>
+					<li>
+						<label for="depositAmount">Deposit Amount</label>
+						<input id="depositAmount" name="depositAmount" type="number" />
+					</li>
+					<p class="error paymentInfoError" id="depositAmount_error">Required Field</p>
+				</ul>
+					
+					<fieldset>
+						<legend id="creditCardInfo">Credit Card Information</legend>
+						<fieldset>
+							<legend for="cardType" >Credit Card Type</legend>
+							<ul id="cardType">
+								<li>
+									<input id="visa" name="cardType" type="radio" />
+									<label for="visa">&#160;&#160;Visa</label>
+								</li>
+								<li>
+									<input id="amex" name="cardType" type="radio" />
+									<label for="amex">&#160;&#160;AM-EX</label>
+								</li>
+								<li>
+									<input id="mastercard" name="cardType" type="radio" />
+									<label for="mastercard">&#160;&#160;Mastercard</label>
+								</li>
+							</ul>
+							<p class="error creditCardInfoError" id="cardType_error">Required Field</p>
+						</fieldset>
+							<ul>
+								<li>
+									<label for="nameOnCard">Name on Card</label>
+									<input id="nameOnCard" name="nameOnCard" type="text" placeholder="JOHN DOE" />
+								</li>
+								<p class="error creditCardInfoError" id="nameOnCard_error">Required Field</p>
+								<li>
+									<label for="cardNumber">Card Number</label>
+									<input id="cardNumber" name="cardNumber" type="number" placeholder="Begins with 4510" />
+								</li>
+								<p class="error creditCardInfoError" id="cardNumber_error">Required Field</p>
+								<li>
+									<label for="cvc">CVC Number</label>
+									<input id="cvc" name="cvc" type="number" placeholder="last # of last 3 blocks"/>
+								</li>
+								<p class="error creditCardInfoError" id="cvc_error">Required Field</p>
+								<li>
+									<label for="expiryDate">Expiry Date</label>
+									<select id="expiryMonth">
+										<option value='choose'>- Select Month -</option>
+										<option value='1'> January</option>
+										<option value='2'>February</option>
+										<option value='3'>March</option>
+										<option value='4'>April</option>
+										<option value='5'>May</option>
+										<option value='6'>June</option>
+										<option value='7'>July</option>
+										<option value='8'>August</option>
+										<option value='9'>September</option>
+										<option value='10'>October</option>
+										<option value='11'>November</option>
+										<option value='12'>December</option>
+									</select>
+									<select id="expiryYear">
+										<option value='2020'>2020</option>
+										<option value='2021'>2021</option>
+										<option value='2022'>2022</option>
+										<option value='2023'>2023</option>
+										<option value='2024'>2024</option>
+										<option value='2025'>2025</option>
+									</select>
+							</ul>
+							<p class="error creditCardInfoError" id="expiryDate_error">Required Field</p>
+					</fieldset>
+			</fieldset>
+			<div id="buttons">
+				<button id="submit" type="submit">Submit</button>
+				<button id="resetButton" type="reset">Clear Form</button>
+			</div>
+		</fieldset>
+	</form>
+
+	<footer>
+		<p><span class="businessName">La Cocina Bonita</span> Copyright &copy; Winnipeg, MB, Canada, A0A 0A0 <strong>June 05 2020</strong></p>
+
+		<p>204-555-9876 | 123-456 Business Rd.</p>
+
+		<p><span class="footerNav"><a href="productsAndServices.html">About</a></span><span class="footerNav"><a href="index.html">Home</a></span><span class="footerNav"><a href="book.html">Book</a></span>
+	</footer>
+
+	<script src="javascript/javascript.js"> </script>
+</body>
+</html>
